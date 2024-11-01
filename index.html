@@ -2,104 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>second-milestone</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Option Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-
-
-    <header>
-        <nav id="navbar">
-            <div class="title">
-                <h1>Test</h1>
+    <header class="site--bar">
+        <nav class="navbar">
+            <div class="navbar--logo">
+                <a href="./index.html">R-Commerce</a>
             </div>
-            <ul class="nav-link">
-
+            <ul class="navbar--menu">
                 <li class="navbar--search-cart">
                     <input type="text" placeholder="Search..." class="navbar--search" />
                 </li>
                 <li id="cartLink"><a href="#shop">Cart</a></li>
-
             </ul>
         </nav>
     </header>
 
 
 
-
     <main class="root">
+        <section class="site--hero">
+            <div class="hero--content">
+                <h1>Ready to Shop</h1>
+                <p>Discover the latest trends and find your perfect look.</p>
+                <a href="#products">
+                    <button class="hero--button">Start Shopping</button>
+                </a>
+            </div>
+        </section>
         <section class="products">
-            <ul class="list">
-                <li>
-                    <div class="product-card" id="1">
-                    
-                        <img alt="This is a brown hat" src="images/Screenshot 2024-10-26 130817.png" class="img">
-                   
-                        <div class="info">
-                            <h1 class="product-name">Hat</h1>
-                            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing 
-                                elit. Voluptates voluptatum eveniet laudantium. Consectetur placeat, iste dicta
-                                 doloribus excepturi consequatur? Consequatur quae cupiditate quam enim at aliquid 
-                                 deserunt esse sunt consequuntur!</p>
-                                 <p class="product-price">$ 29</p>
-                            <button class="btn">click to shop</button>
-                        </div>
-                    </div>
-                </li>
-
-
-
-                <li>
-                    <div class="product-card" id="2">
-                    
-                        <img alt="This is a navy blue sarong" src="images/Screenshot 2024-10-26 131314.png" class="img">
-                    
-                        <div class="info">
-                            <h1 class="product-name">Sarong</h1>
-                            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing 
-                                elit. Voluptates voluptatum eveniet laudantium. Consectetur placeat, iste dicta
-                                 doloribus excepturi consequatur? Consequatur quae cupiditate quam enim at aliquid 
-                                 deserunt esse sunt consequuntur!</p>
-                                 <p class="product-price">$ 48</p>
-                            <button class="btn">click to shop</button>
-                        </div>
-                    </div>
-                </li>
-
-
-
-                <li>
-                    <div class="product-card" id="3">
-                   
-                        <img alt="This is a green scarf" src="images/Screenshot 2024-10-26 131400.png" class="img">
-                   
-                        <div class="info">
-                            <h1 class="product-name">Scarf</h1>
-                            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing 
-                                elit. Voluptates voluptatum eveniet laudantium. Consectetur placeat, iste dicta
-                                 doloribus excepturi consequatur? Consequatur quae cupiditate quam enim at aliquid 
-                                 deserunt esse sunt consequuntur!</p>
-                                 <p class="product-price">$ 20</p>
-                            <button class="btn">click to shop</button>
-                        </div>
-                    </div>
-                </li>
-
+            <h3 class="products--title" id="products">All the products</h3>
+            <div class="products--sorting">
+                <label for="sort">Sort by price:</label>
+                <select id="sort" class="sort--dropdown">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <ul class="products--list">
 
             </ul>
         </section>
     </main>
+    <div id="modalCart" class="modal-cart">
+        <div class="modal-cart-content">
+            <span class="modal-cart-close">&times;</span>
+            <h1>Cart</h1>
+            <p>...</p>
+        </div>
+    </div>
+    <footer class="more">
+        <section>
+            <div class="more--credits">
+                <a href="./index.html" target="_blank">R-Commerce</a>
+                <p class="more--rights">(c) 2024</p>
+            </div>
+        </section>
+    </footer>
 
-
-
-
-    <footer></footer>
-    <script src="file.js"></script>
-
+    <script src="app.js"></script>
 
 </body>
 
